@@ -1,0 +1,4 @@
+C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Models\bin\Debug\SmallHotels.Data.Models.dll
+C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Models\bin\Debug\SmallHotels.Data.Models.pdb
+C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.dll
+C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.pdb
