@@ -8,3 +8,13 @@ C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\
 C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
 C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.dll
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.pdb
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\Bytes2you.Validation.dll
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.dll
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.dll
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.pdb
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.pdb
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
+C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb
