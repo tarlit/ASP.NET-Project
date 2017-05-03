@@ -14,15 +14,15 @@ namespace SmallHotels.DataServices.Models
         {
         }
 
-        public BookModel(Book book)
+        public BookModel(Hotel book)
         {
             if (book != null)
             {
                 this.Id = book.Id;
-                this.Title = book.Title;
+                this.Title = book.Name;
                 this.Author = book.Author;
-                this.ISBN = book.ISBN;
-                this.WebSite = book.WebSite;
+                this.ISBN = book.Email;
+                this.WebSite = book.ImageUrl;
                 this.Description = book.Description;
                 if (book.Category != null)
                 {
@@ -47,17 +47,17 @@ namespace SmallHotels.DataServices.Models
 
         public Guid CategoryId { get; set; }
 
-        public static Expression<Func<Book, BookModel>> Create
+        public static Expression<Func<Hotel, BookModel>> Create
         {
             get
             {
                 return book => new BookModel()
                 {
                     Id = book.Id,
-                    Title = book.Title,
+                    Title = book.Name,
                     Author = book.Author,
-                    ISBN = book.ISBN,
-                    WebSite = book.WebSite,
+                    ISBN = book.Email,
+                    WebSite = book.ImageUrl,
                     Description = book.Description
                 };
             }

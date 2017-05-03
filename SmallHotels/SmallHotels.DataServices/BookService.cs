@@ -11,11 +11,11 @@ namespace SmallHotels.DataServices
 {
     public class BookService : IBookService
     {
-        private readonly IEfDbSetWrapper<Book> bookSetWrapper;
+        private readonly IEfDbSetWrapper<Hotel> bookSetWrapper;
 
         private readonly ISmallHotelsEfDbContextSaveChanges dbContext;
 
-        public BookService(IEfDbSetWrapper<Book> bookSetWrapper, ISmallHotelsEfDbContextSaveChanges dbContext)
+        public BookService(IEfDbSetWrapper<Hotel> bookSetWrapper, ISmallHotelsEfDbContextSaveChanges dbContext)
         {
             Guard.WhenArgument(bookSetWrapper, "bookSetWrapper").IsNull().Throw();
             Guard.WhenArgument(dbContext, "dbContext").IsNull().Throw();
@@ -30,7 +30,7 @@ namespace SmallHotels.DataServices
 
             if (id.HasValue)
             {
-                Book book = this.bookSetWrapper.GetById(id.Value);
+                Hotel book = this.bookSetWrapper.GetById(id.Value);
                 if (book != null)
                 {
                     result = new BookModel(book);
@@ -46,7 +46,7 @@ namespace SmallHotels.DataServices
                 ? this.bookSetWrapper.All.Select(BookModel.Create).ToList()
                 : this.bookSetWrapper.All
                     .Where(b =>
-                        (string.IsNullOrEmpty(b.Title) ? false : b.Title.Contains(searchTerm))
+                        (string.IsNullOrEmpty(b.Name) ? false : b.Name.Contains(searchTerm))
                         ||
                         (string.IsNullOrEmpty(b.Author) ? false : b.Author.Contains(searchTerm)))
                     .Select(BookModel.Create).ToList();

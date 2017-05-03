@@ -7,3 +7,7 @@ C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.D
 C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.dll
 C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Models\bin\Debug\SmallHotels.Data.Models.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Models\bin\Debug\SmallHotels.Data.Models.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Models\obj\Debug\SmallHotels.Data.Models.pdb

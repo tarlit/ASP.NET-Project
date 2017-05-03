@@ -12,7 +12,7 @@ namespace SmallHotels.DataServices.Models
         {
         }
 
-        public CategoryModel(Category category)
+        public CategoryModel(Region category)
         {
             if (category != null)
             {
@@ -28,7 +28,7 @@ namespace SmallHotels.DataServices.Models
 
         public IEnumerable<BookModel> Books { get; set; }
 
-        public static Expression<Func<Category, CategoryModel>> Create
+        public static Expression<Func<Region, CategoryModel>> Create
         {
             get
             {

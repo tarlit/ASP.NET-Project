@@ -13,11 +13,11 @@ namespace SmallHotels.DataServices
 {
     public class CategoryService : ICategoryService
     {
-        private readonly IEfDbSetWrapper<Category> categorySetWrapper;
+        private readonly IEfDbSetWrapper<Region> categorySetWrapper;
 
         private readonly ISmallHotelsEfDbContextSaveChanges dbContext;
         
-        public CategoryService(IEfDbSetWrapper<Category> categorySetWrapper, ISmallHotelsEfDbContextSaveChanges dbContext)
+        public CategoryService(IEfDbSetWrapper<Region> categorySetWrapper, ISmallHotelsEfDbContextSaveChanges dbContext)
         {
             Guard.WhenArgument(categorySetWrapper, "categorySetWrapper").IsNull().Throw();
             Guard.WhenArgument(dbContext, "dbContext").IsNull().Throw();
@@ -28,12 +28,15 @@ namespace SmallHotels.DataServices
         
         public IEnumerable<CategoryModel> GetAllCategoriesSortedById()
         {
-            return this.categorySetWrapper.All.ToList().OrderBy(c => c.Id).AsQueryable().Select(CategoryModel.Create).ToList();
+            return this.categorySetWrapper.All.ToList()
+                .OrderBy(c => c.Id).AsQueryable()
+                .Select(CategoryModel.Create).ToList();
         }
 
         public IEnumerable<CategoryModel> GetAllCategoriesWithBooksIncluded()
         {
-            return this.categorySetWrapper.AllWithInclude(c => c.Books).Select(CategoryModel.Create).ToList();
+            return this.categorySetWrapper.AllWithInclude(c => c.Books)
+                .Select(CategoryModel.Create).ToList();
         }
 
         public CategoryModel GetById(Guid id)

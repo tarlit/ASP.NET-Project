@@ -16,7 +16,7 @@ namespace SmallHotels.Controllers
         public ActionResult Index()
         {
             // samo za demoto 
-            //LiveDemoEfDbContext dbContext = new LiveDemoEfDbContext();
+            //SmallHotelsEfDbContext dbContext = new SmallHotelsEfDbContext();
             //var books = dbContext.Books.ToList();
             //var categories = dbContext.Categories.ToList();
 

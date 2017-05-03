@@ -1,13 +1,13 @@
-﻿using SmallHotels.Data;
-using SmallHotels.Data.Migrations;
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
-using System.Linq;
+﻿using System.Data.Entity;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+
+using SmallHotels.App_Start;
+using SmallHotels.Data;
+using SmallHotels.Data.Migrations;
 
 namespace SmallHotels
 {
@@ -24,6 +24,8 @@ namespace SmallHotels
             ViewEngines.Engines.Add(new RazorViewEngine());
 
             Database.SetInitializer(new MigrateDatabaseToLatestVersion<SmallHotelsEfDbContext, Configuration>());
+
+            AutoMapperConfig.Config(Assembly.GetExecutingAssembly());
         }
     }
 }

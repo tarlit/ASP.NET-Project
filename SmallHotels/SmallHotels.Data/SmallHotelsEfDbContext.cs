@@ -2,13 +2,14 @@
 using SmallHotels.Data.Models;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
+using System;
 
 namespace SmallHotels.Data
 {
     public class SmallHotelsEfDbContext : DbContext, ISmallHotelsEfDbContextSaveChanges
     {
         public SmallHotelsEfDbContext()
-            : base("DefaultConnection")
+            : base("SmallHotels")
         {
         }
 
@@ -18,54 +19,74 @@ namespace SmallHotels.Data
             return base.Set<T>();
         }
 
-        public IDbSet<Book> Books { get; set; }
-
-        public IDbSet<Category> Categories { get; set; }
+        public IDbSet<Hotel> Hotels { get; set; }
+        public IDbSet<HotelInfo> HotelInfos { get; set; }
+        public IDbSet<Region> Regions { get; set; }
+        public IDbSet<Room> Rooms { get; set; }
+        public IDbSet<Comment> Comments { get; set; }
+        public IDbSet<Like> Likes { get; set; }
+        public IDbSet<BookRoom> BookRooms { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            this.OnBookCreating(modelBuilder);
-            this.OnCategoryCreating(modelBuilder);
+            this.OnHotelCreating(modelBuilder);
+            this.OnHotelInfoCreating(modelBuilder);
+            this.OnRegionCreating(modelBuilder);
+            this.OnRoomCreating(modelBuilder);
+            this.OnCommentCreating(modelBuilder);
+            this.OnLikeCreating(modelBuilder);
+            this.OnBookRoomCreating(modelBuilder);
+        }       
+
+        private void OnHotelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Hotel>()
+                .Property(h => h.Name).IsRequired();
+
+            modelBuilder.Entity<Hotel>()
+                .Property(h => h.ImageUrl).IsRequired();
+
+            modelBuilder.Entity<Hotel>()
+               .HasRequired(hi => hi.HotelInfo)
+               .WithRequiredPrincipal(h => h.Hotel);
+
+            modelBuilder.Entity<Hotel>()
+                .HasRequired(h => h.Region)
+                .WithMany(c => c.Hotels)
+                .HasForeignKey(h => h.RegionId);
         }
 
-        private void OnBookCreating(DbModelBuilder modelBuilder)
+        private void OnHotelInfoCreating(DbModelBuilder modelBuilder)
         {
-            // TO DO
-            //modelBuilder.Entity<Book>()
-            //    .HasKey(b => b.Id)
-            //    .Property(b => b.Id)
-            //    .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity).IsRequired();
-
-            modelBuilder.Entity<Book>()
-                .Property(b => b.Author).IsRequired();
-
-            modelBuilder.Entity<Book>()
-                .Property(b => b.Title).IsRequired();
-
-            //modelBuilder.Entity<Book>()
-            //    .Property(b => b.CategoryId).IsOptional();
-
-            modelBuilder.Entity<Book>()
-                .HasRequired(b => b.Category)
-                .WithMany(c => c.Books)
-                .HasForeignKey(b => b.CategoryId);
+            modelBuilder.Entity<HotelInfo>()
+                .HasRequired(h => h.Hotel)
+                .WithRequiredPrincipal(hi => hi.HotelInfo);
         }
 
-        private void OnCategoryCreating(DbModelBuilder modelBuilder)
+        private void OnRegionCreating(DbModelBuilder modelBuilder)
         {
-            // TO DO
-            //modelBuilder.Entity<Category>()
-            //    .HasKey(b => b.Id)
-            //    .Property(b => b.Id)
-            //    .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity).IsRequired();
-
-            modelBuilder.Entity<Category>()
+            modelBuilder.Entity<Region>()
                 .Property(b => b.Name).IsRequired();
+        }
 
-            //modelBuilder.Entity<Category>()
-            //    .HasMany(c => c.Books)
-            //    .WithOptional(b => b.Category);
-                //.HasForeignKey(b => b.CategoryId);
+        private void OnBookRoomCreating(DbModelBuilder modelBuilder)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void OnLikeCreating(DbModelBuilder modelBuilder)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void OnCommentCreating(DbModelBuilder modelBuilder)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void OnRoomCreating(DbModelBuilder modelBuilder)
+        {
+            throw new NotImplementedException();
         }
     }
 }

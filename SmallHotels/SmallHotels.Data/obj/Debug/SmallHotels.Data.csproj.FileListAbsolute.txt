@@ -28,3 +28,18 @@ C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.D
 C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data\obj\Debug\SmallHotels.Data.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data\obj\Debug\SmallHotels.Data.dll
 C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data\obj\Debug\SmallHotels.Data.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.dll.config
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\Bytes2you.Validation.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.Contracts.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.Models.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.Contracts.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\SmallHotels.Data.Models.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\obj\Debug\SmallHotels.Data.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\obj\Debug\SmallHotels.Data.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data\obj\Debug\SmallHotels.Data.pdb
