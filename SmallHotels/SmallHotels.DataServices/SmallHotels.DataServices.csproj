@@ -34,7 +34,24 @@
       <HintPath>..\packages\Bytes2you.Validation.2.0.0.0\lib\portable-win+net40+sl40+wp+Xbox40\Bytes2you.Validation.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -44,15 +61,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookService.cs" />
-    <Compile Include="CategoryService.cs" />
-    <Compile Include="Contracts\IBookService.cs" />
-    <Compile Include="Contracts\ICategoryService.cs" />
-    <Compile Include="Models\BookModel.cs" />
-    <Compile Include="Models\CategoryModel.cs" />
+    <Compile Include="HotelService.cs" />
+    <Compile Include="RegionService.cs" />
+    <Compile Include="Contracts\IHotelService.cs" />
+    <Compile Include="Contracts\IRegionService.cs" />
+    <Compile Include="Models\ApplicationUserModel.cs" />
+    <Compile Include="Models\BookRoomModel.cs" />
+    <Compile Include="Models\CommentModel.cs" />
+    <Compile Include="Models\HotelInfoModel.cs" />
+    <Compile Include="Models\HotelModel.cs" />
+    <Compile Include="Models\LikeModel.cs" />
+    <Compile Include="Models\RegionModel.cs" />
+    <Compile Include="Models\RoomModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SmallHotels.Auth\SmallHotels.Auth.csproj">
+      <Project>{D66CB072-3EF6-468D-B5C2-1107E929C505}</Project>
+      <Name>SmallHotels.Auth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmallHotels.Data.Contracts\SmallHotels.Data.Contracts.csproj">
       <Project>{2350f916-db40-405f-8b2c-b26b9e6da0dd}</Project>
       <Name>SmallHotels.Data.Contracts</Name>
@@ -63,6 +90,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -52,8 +52,7 @@ namespace SmallHotels.Data
 
             modelBuilder.Entity<Hotel>()
                 .HasRequired(h => h.Region)
-                .WithMany(c => c.Hotels)
-                .HasForeignKey(h => h.RegionId);
+                .WithMany(c => c.Hotels);
         }
 
         private void OnHotelInfoCreating(DbModelBuilder modelBuilder)
@@ -69,24 +68,43 @@ namespace SmallHotels.Data
                 .Property(b => b.Name).IsRequired();
         }
 
-        private void OnBookRoomCreating(DbModelBuilder modelBuilder)
+        private void OnRoomCreating(DbModelBuilder modelBuilder)
         {
-            throw new NotImplementedException();
-        }
+            modelBuilder.Entity<Room>()
+                .Property(r => r.RoomType).IsRequired();
 
-        private void OnLikeCreating(DbModelBuilder modelBuilder)
-        {
-            throw new NotImplementedException();
+            modelBuilder.Entity<Room>()
+                .Property(r => r.PricePerNight).IsRequired();
+
+            modelBuilder.Entity<Room>()
+                .HasRequired(r => r.Hotel)
+                .WithMany(c => c.Rooms);
         }
 
         private void OnCommentCreating(DbModelBuilder modelBuilder)
         {
-            throw new NotImplementedException();
+            modelBuilder.Entity<Comment>()
+                .Property(c => c.Content).IsRequired();
+
+            modelBuilder.Entity<Comment>()
+                .HasRequired(r => r.HotelInfo)
+                .WithMany(h => h.Comments);
         }
 
-        private void OnRoomCreating(DbModelBuilder modelBuilder)
+        private void OnLikeCreating(DbModelBuilder modelBuilder)
         {
-            throw new NotImplementedException();
+            modelBuilder.Entity<Like>()
+                .HasRequired(l => l.HotelInfo)
+                .WithMany(h => h.Likes);
         }
+
+        private void OnBookRoomCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<BookRoom>()
+                .Property(b => b.StartDate).IsRequired();
+
+            modelBuilder.Entity<BookRoom>()
+                .Property(b => b.NightsCount).IsRequired();
+        }       
     }
 }

@@ -12,7 +12,7 @@ namespace SmallHotels.Data.Models
             this.hotels = new HashSet<Hotel>();
         }
 
-        public Guid RegionId { get; set; }
+        public Guid Id { get; set; }
 
         public string Name { get; set; }
 

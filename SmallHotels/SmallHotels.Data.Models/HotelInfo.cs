@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace SmallHotels.Data.Models
 {
@@ -17,13 +14,15 @@ namespace SmallHotels.Data.Models
             this.likes = new HashSet<Like>();
         }
 
-        public Guid HotelInfoId { get; set; }
+        public Guid Id { get; set; }
 
         public string Location { get; set; }
 
         public string Lattitude { get; set; }
 
         public string Longitude { get; set; }
+
+        public Guid HotelId { get; set; }
 
         public virtual Hotel Hotel { get; set; }
 

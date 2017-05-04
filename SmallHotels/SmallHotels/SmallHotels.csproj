@@ -217,7 +217,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\BookController.cs" />
+    <Compile Include="Controllers\HotelController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
@@ -226,9 +226,14 @@
     <Compile Include="HttpModules\CultureModule.cs" />
     <Compile Include="Infrastructure\AjaxOnlyAttribute.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\BookViewModel.cs" />
-    <Compile Include="Models\CategoryViewModel.cs" />
+    <Compile Include="Models\BookRoomViewModel.cs" />
+    <Compile Include="Models\CommentViewModel.cs" />
+    <Compile Include="Models\HotelInfoViewModel.cs" />
+    <Compile Include="Models\HotelViewModel.cs" />
+    <Compile Include="Models\LikeViewModel.cs" />
+    <Compile Include="Models\RegionViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\RoomViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -366,11 +371,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Book\Details.cshtml" />
-    <Content Include="Views\Book\All.cshtml" />
-    <Content Include="Views\Shared\DisplayTemplates\BookViewModel.cshtml" />
-    <Content Include="Views\Book\_AllBooksPartial.cshtml" />
-    <Content Include="Views\Book\_FilteredBooksPartial.cshtml" />
+    <Content Include="Views\Hotel\Details.cshtml" />
+    <Content Include="Views\Hotel\All.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\HotelViewModel.cshtml" />
+    <Content Include="Views\Hotel\_AllHotelsPartial.cshtml" />
+    <Content Include="Views\Hotel\_FilteredHotelsPartial.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
   </ItemGroup>

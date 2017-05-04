@@ -12,7 +12,7 @@ namespace SmallHotels.Data.Models
             this.rooms = new HashSet<Room>();
         }
 
-        public Guid HotelId { get; set; }
+        public Guid Id { get; set; }
         
         public string Name { get; set; }
 
@@ -23,6 +23,8 @@ namespace SmallHotels.Data.Models
         public string Description { get; set; }
 
         public int RoomsCount { get; set; }
+
+        public Guid HotelInfoId { get; set; }
 
         public virtual HotelInfo HotelInfo { get; set; }
 

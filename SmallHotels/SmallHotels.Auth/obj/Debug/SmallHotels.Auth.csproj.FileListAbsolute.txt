@@ -120,6 +120,5 @@ C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\bin\Debug\System.Web.Razor.x
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\bin\Debug\System.Web.WebPages.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\bin\Debug\System.Web.WebPages.Razor.xml
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\obj\Debug\SmallHotels.Auth.csprojResolveAssemblyReference.cache
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\obj\Debug\SmallHotels.Auth.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Auth\obj\Debug\SmallHotels.Auth.pdb

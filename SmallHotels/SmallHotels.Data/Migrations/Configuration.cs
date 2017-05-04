@@ -17,6 +17,7 @@ namespace SmallHotels.Data.Migrations
 
         protected override void Seed(SmallHotelsEfDbContext context)
         {
+            /*
             if (context.Books.Any())
             {
                 return;
@@ -89,6 +90,7 @@ namespace SmallHotels.Data.Migrations
             };
 
             context.Books.AddOrUpdate(books.ToArray());
+            */
         }
     }
 }

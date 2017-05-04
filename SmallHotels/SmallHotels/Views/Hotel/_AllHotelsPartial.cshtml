@@ -1,0 +1,14 @@
+﻿@model IEnumerable<RegionViewModel>
+
+<div>
+    @foreach (var region in Model)
+    {
+        <h3>@(region.Name)</h3>
+        <div class="panel">
+            @foreach (var hotel in region.Hotels)
+            {
+                @hotel.Name;
+            }
+        </div>
+    }
+</div>

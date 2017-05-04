@@ -9,7 +9,7 @@ namespace SmallHotels.Data.Models
 {
     public class Comment
     {
-        public Guid CommentId { get; set; }
+        public Guid Id { get; set; }
 
         public string Content { get; set; }
 
@@ -19,8 +19,8 @@ namespace SmallHotels.Data.Models
 
         public virtual ApplicationUser User { get; set; }
 
-        public Guid HotelId { get; set; }
+        public Guid HotelInfoId { get; set; }
 
-        public virtual Hotel Hotel { get; set; }
+        public virtual HotelInfo HotelInfo { get; set; }
     }
 }
