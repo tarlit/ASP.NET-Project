@@ -39,6 +39,6 @@ namespace SmallHotels.Models
 
         public int RoomsCount { get; set; }
 
-        public IEnumerable<Room> Rooms { get; set; }
+        public IEnumerable<RoomViewModel> Rooms { get; set; }
     }
 }
