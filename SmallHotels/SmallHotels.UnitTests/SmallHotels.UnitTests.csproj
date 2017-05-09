@@ -105,11 +105,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SmallHotels.DataServices\BookServiceTests\Constructor_Should.cs" />
-    <Compile Include="SmallHotels.DataServices\BookServiceTests\GetById_Should.cs" />
-    <Compile Include="SmallHotels\Controllers\AccountControllerTests\Login_Should.cs" />
-    <Compile Include="SmallHotels\Controllers\BookControllerTests\Constructor_Should.cs" />
-    <Compile Include="SmallHotels\Controllers\BookControllerTests\Details_Should.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SmallHotels.DataServices.Models
+namespace SmallHotels.Common.Constants
 {
-    public class ApplicationUserModel
+    public class PageConstants
     {
-
+        public const int UsersPageSize = 5;
     }
 }

@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SmallHotels.Data.Models;
 
 namespace SmallHotels.Auth.Contracts
 {
@@ -15,7 +16,7 @@ namespace SmallHotels.Auth.Contracts
 
         Task<bool> HasBeenVerifiedAsync();
 
-        Task SignInAsync(ApplicationUser user, bool isPersistent, bool rememberBrowser);
+        Task SignInAsync(User user, bool isPersistent, bool rememberBrowser);
        
         Task<SignInStatus> TwoFactorSignInAsync(string provider, string code, bool isPersistent, bool rememberBrowser);
 

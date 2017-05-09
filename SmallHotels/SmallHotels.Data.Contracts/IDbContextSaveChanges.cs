@@ -1,6 +1,6 @@
 ﻿namespace SmallHotels.Data.Contracts
 {
-    public interface ISmallHotelsEfDbContextSaveChanges
+    public interface IDbContextSaveChanges
     {
         int SaveChanges();
     }

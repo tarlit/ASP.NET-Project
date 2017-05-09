@@ -54,7 +54,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EfDbSetWrappers\EfDbSetWrapper.cs" />
-    <Compile Include="SmallHotelsEfDbContext.cs" />
+    <Compile Include="ISmallHotelsContext.cs" />
+    <Compile Include="SmallHotelsContext.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -63,6 +64,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SmallHotels.Auth\SmallHotels.Auth.csproj">
+      <Project>{D66CB072-3EF6-468D-B5C2-1107E929C505}</Project>
+      <Name>SmallHotels.Auth</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmallHotels.Data.Contracts\SmallHotels.Data.Contracts.csproj">
       <Project>{2350f916-db40-405f-8b2c-b26b9e6da0dd}</Project>
       <Name>SmallHotels.Data.Contracts</Name>

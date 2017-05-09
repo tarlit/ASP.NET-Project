@@ -23,7 +23,7 @@ namespace SmallHotels
             ViewEngines.Engines.Clear();
             ViewEngines.Engines.Add(new RazorViewEngine());
 
-            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SmallHotelsEfDbContext, Configuration>());
+            Database.SetInitializer(new MigrateDatabaseToLatestVersion<SmallHotelsContext, Configuration>());
 
             AutoMapperConfig.Config(Assembly.GetExecutingAssembly());
         }

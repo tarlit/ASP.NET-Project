@@ -1,45 +1,23 @@
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.pdb
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\Bytes2you.Validation.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.pdb
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.pdb
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.pdb
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\Bytes2you.Validation.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.pdb
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.pdb
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.dll.config
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.pdb
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Bytes2you.Validation.dll
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.dll
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.pdb
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.pdb
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb
-C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.DataServices.dll.config
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\EntityFramework.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.AspNet.Identity.Core.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Auth.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.Owin.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.Owin.Security.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Owin.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.Owin.Security.Cookies.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Auth.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Contracts.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Data.Models.pdb
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\EntityFramework.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.AspNet.Identity.Core.xml
@@ -48,3 +26,5 @@ C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.Owin.Security.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb

@@ -1,12 +1,3 @@
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Contracts\bin\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Contracts\bin\Debug\SmallHotels.Data.Contracts.pdb
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Contracts\obj\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\MVC-Project SoftUni\SmallHotels\SmallHotels.Data.Contracts\obj\Debug\SmallHotels.Data.Contracts.pdb
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Contracts\bin\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Contracts\bin\Debug\SmallHotels.Data.Contracts.pdb
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Contracts\obj\Debug\SmallHotels.Data.Contracts.csprojResolveAssemblyReference.cache
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Contracts\obj\Debug\SmallHotels.Data.Contracts.dll
-C:\Users\Admin\Desktop\ASP.NET Project\ASP.NET-Project\SmallHotels\SmallHotels.Data.Contracts\obj\Debug\SmallHotels.Data.Contracts.pdb
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Contracts\bin\Debug\SmallHotels.Data.Contracts.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Contracts\bin\Debug\SmallHotels.Data.Contracts.pdb
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.Data.Contracts\obj\Debug\SmallHotels.Data.Contracts.dll

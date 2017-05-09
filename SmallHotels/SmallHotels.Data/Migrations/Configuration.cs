@@ -7,7 +7,7 @@ namespace SmallHotels.Data.Migrations
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    public sealed class Configuration : DbMigrationsConfiguration<SmallHotelsEfDbContext>
+    public sealed class Configuration : DbMigrationsConfiguration<SmallHotelsContext>
     {
         public Configuration()
         {
@@ -15,7 +15,7 @@ namespace SmallHotels.Data.Migrations
             AutomaticMigrationDataLossAllowed = true;
         }
 
-        protected override void Seed(SmallHotelsEfDbContext context)
+        protected override void Seed(SmallHotelsContext context)
         {
             /*
             if (context.Books.Any())

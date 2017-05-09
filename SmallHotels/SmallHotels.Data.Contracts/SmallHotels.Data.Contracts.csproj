@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IEfDbSetWrapper.cs" />
-    <Compile Include="ISmallHotelsEfDbContextSaveChanges.cs" />
+    <Compile Include="IDbContextSaveChanges.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

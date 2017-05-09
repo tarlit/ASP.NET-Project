@@ -118,16 +118,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationSignInManager.cs" />
+    <Compile Include="ApplicationUserManager.cs" />
     <Compile Include="Contracts\ISignInService.cs" />
     <Compile Include="Contracts\IUserService.cs" />
-    <Compile Include="IdentityConfig.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="EmailService.cs" />
+    <Compile Include="Models\ApplicationDbContext.cs" />
+    <Compile Include="Models\UserOld.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmsService.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SmallHotels.Data.Models\SmallHotels.Data.Models.csproj">
+      <Project>{062b34f1-094d-4ad1-9daf-88613992b153}</Project>
+      <Name>SmallHotels.Data.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

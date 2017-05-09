@@ -2,7 +2,6 @@
 using SmallHotels.Data.Contracts;
 using SmallHotels.Data.Models;
 using SmallHotels.DataServices.Contracts;
-using SmallHotels.DataServices.Models;
 using System;
 using System.Linq;
 using System.Collections.Generic;
@@ -13,9 +12,9 @@ namespace SmallHotels.DataServices
     {
         private readonly IEfDbSetWrapper<Hotel> hotelSetWrapper;
 
-        private readonly ISmallHotelsEfDbContextSaveChanges dbContext;
+        private readonly IDbContextSaveChanges dbContext;
 
-        public HotelService(IEfDbSetWrapper<Hotel> hotelSetWrapper, ISmallHotelsEfDbContextSaveChanges dbContext)
+        public HotelService(IEfDbSetWrapper<Hotel> hotelSetWrapper, IDbContextSaveChanges dbContext)
         {
             Guard.WhenArgument(hotelSetWrapper, "hotelSetWrapper").IsNull().Throw();
             Guard.WhenArgument(dbContext, "dbContext").IsNull().Throw();
@@ -24,30 +23,30 @@ namespace SmallHotels.DataServices
             this.dbContext = dbContext;
         }
 
-        public HotelModel GetById(Guid? id)
-        {
-            HotelModel result = null;
+        //public HotelModel GetById(Guid? id)
+        //{
+        //    HotelModel result = null;
 
-            if (id.HasValue)
-            {
-                Hotel hotel = this.hotelSetWrapper.GetById(id.Value);
-                if (hotel != null)
-                {
-                    result = new HotelModel(hotel);
-                }
-            }
+        //    if (id.HasValue)
+        //    {
+        //        Hotel hotel = this.hotelSetWrapper.GetById(id.Value);
+        //        if (hotel != null)
+        //        {
+        //            result = new HotelModel(hotel);
+        //        }
+        //    }
 
-            return result;
-        }
+        //    return result;
+        //}
 
-        public IEnumerable<HotelModel> GetHotelsByName(string searchTerm)
-        {
-            return string.IsNullOrEmpty(searchTerm)
-                ? this.hotelSetWrapper.All.Select(HotelModel.Create).ToList()
-                : this.hotelSetWrapper.All
-                    .Where(h =>
-                        (string.IsNullOrEmpty(h.Name) ? false : h.Name.Contains(searchTerm)))
-                    .Select(HotelModel.Create).ToList();
-        }
+        //public IEnumerable<HotelModel> GetHotelsByName(string searchTerm)
+        //{
+        //    return string.IsNullOrEmpty(searchTerm)
+        //        ? this.hotelSetWrapper.All.Select(HotelModel.Create).ToList()
+        //        : this.hotelSetWrapper.All
+        //            .Where(h =>
+        //                (string.IsNullOrEmpty(h.Name) ? false : h.Name.Contains(searchTerm)))
+        //            .Select(HotelModel.Create).ToList();
+        //}
     }
 }

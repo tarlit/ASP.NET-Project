@@ -61,21 +61,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\IUserInfoService.cs" />
+    <Compile Include="Factories\IBookRoomFactory.cs" />
+    <Compile Include="Factories\ICommentFactory.cs" />
+    <Compile Include="Factories\IHotelFactory.cs" />
+    <Compile Include="Factories\ILikeFactory.cs" />
+    <Compile Include="Factories\IRegionFactory.cs" />
+    <Compile Include="Factories\IRoomFactory.cs" />
     <Compile Include="HotelService.cs" />
     <Compile Include="RegionService.cs" />
     <Compile Include="Contracts\IHotelService.cs" />
     <Compile Include="Contracts\IRegionService.cs" />
-    <Compile Include="Models\ApplicationUserModel.cs" />
-    <Compile Include="Models\BookRoomModel.cs" />
-    <Compile Include="Models\CommentModel.cs" />
-    <Compile Include="Models\HotelInfoModel.cs" />
-    <Compile Include="Models\HotelModel.cs" />
-    <Compile Include="Models\LikeModel.cs" />
-    <Compile Include="Models\RegionModel.cs" />
-    <Compile Include="Models\RoomModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInfoService.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Services\SmallHotels.Common\SmallHotels.Common.csproj">
+      <Project>{F6BFC1D1-094C-4B1B-A25C-E9D047C17E30}</Project>
+      <Name>SmallHotels.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SmallHotels.Auth\SmallHotels.Auth.csproj">
       <Project>{D66CB072-3EF6-468D-B5C2-1107E929C505}</Project>
       <Name>SmallHotels.Auth</Name>

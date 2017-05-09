@@ -11,10 +11,10 @@ namespace SmallHotels.Data.EfRepository
     public class EfDbSetWrapper<T> : IEfDbSetWrapper<T>
         where T : class
     {
-        private readonly SmallHotelsEfDbContext efDbContext;
+        private readonly SmallHotelsContext efDbContext;
         private readonly IDbSet<T> dbSet;
 
-        public EfDbSetWrapper(SmallHotelsEfDbContext efDbContext)
+        public EfDbSetWrapper(SmallHotelsContext efDbContext)
         {
             Guard.WhenArgument(efDbContext, "efDbContext").IsNull().Throw();
 

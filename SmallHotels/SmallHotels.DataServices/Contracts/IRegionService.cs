@@ -1,5 +1,4 @@
 ﻿using SmallHotels.Data.Models;
-using SmallHotels.DataServices.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,10 +7,10 @@ namespace SmallHotels.DataServices.Contracts
 {
     public interface IRegionService
     {
-        IEnumerable<RegionModel> GetAllRegionsWithHotelsIncluded();
+        //IEnumerable<RegionModel> GetAllRegionsWithHotelsIncluded();
 
-        IEnumerable<RegionModel> GetAllRegionsSortedById();
+        //IEnumerable<RegionModel> GetAllRegionsSortedById();
 
-        RegionModel GetById(Guid id);
+        //RegionModel GetById(Guid id);
     }
 }
