@@ -12,7 +12,7 @@ namespace SmallHotels.DataServices.Contracts
 
         IEnumerable<Hotel> GetHotelsByRegion(Guid regionId);
 
-        void CreateHotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, Guid regionId);
+        void CreateHotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, string region);
 
         void EditHotel(Guid hotelId, string name, string email, string imageUrl, string description);
 

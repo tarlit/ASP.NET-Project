@@ -61,7 +61,7 @@ namespace SmallHotels.DataServices
             throw new NotImplementedException();
         }
 
-        public void CreateHotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, Guid regionId)
+        public void CreateHotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, string region)
         {
             Guard.WhenArgument(name, "name").IsNull().Throw();
             Guard.WhenArgument(email, "email").IsNull().Throw();
@@ -70,12 +70,12 @@ namespace SmallHotels.DataServices
             Guard.WhenArgument(location, "location").IsNull().Throw();
             Guard.WhenArgument(lattitude, "lattitude").IsNull().Throw();
             Guard.WhenArgument(longitude, "longitude").IsNull().Throw();
-            if (regionId == null)
+            if (region == null)
             {
-                throw new ArgumentNullException("Region ID cannot be null or empty!");
+                throw new ArgumentNullException("Region Name cannot be null or empty!");
             }
 
-            Hotel hotel = this.hotelFactory.CreateHotel(name, email, imageUrl, description, location, lattitude, longitude, regionId);
+            Hotel hotel = this.hotelFactory.CreateHotel(name, email, imageUrl, description, location, lattitude, longitude, region);
             this.hotelSetWrapper.Add(hotel);
             this.dbContext.SaveChanges();
         }

@@ -13,5 +13,7 @@ namespace SmallHotels.Common.Constants
         public const int RegionsPageSize = 10;
 
         public const int ProfilePageCount = 10;
+
+        public const string RegionsBaseUrl = "/regions/index";
     }
 }

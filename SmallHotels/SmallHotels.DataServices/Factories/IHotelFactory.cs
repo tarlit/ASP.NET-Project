@@ -5,6 +5,6 @@
 
     public interface IHotelFactory
     {
-        Hotel CreateHotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, Guid regionId);
+        Hotel CreateHotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, string region);
     }
 }

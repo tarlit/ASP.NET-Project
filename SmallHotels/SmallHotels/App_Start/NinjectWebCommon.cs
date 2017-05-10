@@ -10,6 +10,13 @@ namespace SmallHotels.App_Start
 
     using Ninject;
     using Ninject.Web.Common;
+    using Common.Contracts;
+    using Common;
+    using DataServices.Contracts;
+    using DataServices;
+    using Data.Contracts;
+    using Data.EfDbSetWrappers;
+    using Data;
 
     public static class NinjectWebCommon 
     {
@@ -61,6 +68,25 @@ namespace SmallHotels.App_Start
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
+            // kernel.Bind<IEfDbSetWrapper<T>>().To<EfDbSetWrapper<T>>().InRequestScope();
+            kernel.Bind<IDbContextSaveChanges>().To<SmallHotelsContext>().InRequestScope();
+
+            kernel.Bind<IMappingService>().To<MappingService>();
+
+            //kernel.Bind<IUserService>().To<UserService>();
+            kernel.Bind<IUserInfoService>().To<UserInfoService>();
+            kernel.Bind<IRegionService>().To<RegionService>();
+            kernel.Bind<IHotelService>().To<HotelService>();
+            kernel.Bind<ICartService>().To<CartService>();
+            kernel.Bind<IBookRoomService>().To<BookRoomService>();
+            kernel.Bind<IUtilitiesService>().To<UtilitiesService>();
+
+            //kernel.Bind<IRegionFactory>().ToFactory().InSingletonScope();
+            //kernel.Bind<ICommentFactory>().ToFactory().InSingletonScope();
+            //kernel.Bind<ILikeFactory>().ToFactory().InSingletonScope();
+            //kernel.Bind<IHotelFactory>().ToFactory().InSingletonScope();
+            //kernel.Bind<IRoomFactory>().ToFactory().InSingletonScope();
+            //kernel.Bind<IBookRoomFactory>().ToFactory().InSingletonScope();
         }        
     }
 }

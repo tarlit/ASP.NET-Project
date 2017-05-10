@@ -1,7 +1,9 @@
 ﻿using Bytes2you.Validation;
+using SmallHotels.Common.Contracts;
 using SmallHotels.DataServices.Contracts;
 using SmallHotels.Infrastructure;
 using SmallHotels.Models;
+using SmallHotels.Models.HotelViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,34 +12,47 @@ using System.Web.Mvc;
 
 namespace SmallHotels.Controllers
 {
+    [Authorize]
     public class HotelController : Controller
     {
-        //private readonly IHotelService hotelService;
-        //private readonly IRegionService regionService;
+        protected readonly IHotelService hotelService;
+        protected readonly IMappingService mappingService;
+        protected readonly IUserInfoService userInfoService;
+        protected readonly IUtilitiesService utils;
 
-        //public HotelController(IHotelService hotelService, IRegionService regionService)
-        //{
-        //    Guard.WhenArgument(hotelService, "hotelService").IsNull().Throw();
-        //    Guard.WhenArgument(regionService, "regionService").IsNull().Throw();
+        public HotelController(IHotelService hotelService, IMappingService mappingService, IUserInfoService userInfoService, IUtilitiesService utils)
+        {
+            Guard.WhenArgument(hotelService, "hotelService").IsNull().Throw();
+            Guard.WhenArgument(mappingService, "mappingService").IsNull().Throw();
+            Guard.WhenArgument(userInfoService, "userInfoService").IsNull().Throw();
+            Guard.WhenArgument(utils, "utils").IsNull().Throw();
 
-        //    this.hotelService = hotelService;
-        //    this.regionService = regionService;
-        //}
+            this.hotelService = hotelService;
+            this.mappingService = mappingService;
+            this.userInfoService = userInfoService;
+            this.utils = utils;
+        }
 
-        //public ActionResult Details(Guid? id)
-        //{
-        //    HotelModel hotel = this.hotelService.GetById(id);
+        [HttpGet]
+        [Authorize(Roles = "admin")]
+        public ActionResult CreateHotel()
+        {
+            return this.View();
+        }
 
-        //    HotelViewModel viewModel = new HotelViewModel(hotel);
+        [HttpPost]
+        [Authorize(Roles = "admin")]     
+        public ActionResult CreateHotel(CreateEditHotelViewModel model)
+        {
+            if (!this.ModelState.IsValid)
+            {
+                return this.View(model);
+            }
 
-        //    return this.View(viewModel);
-        //}
+            this.hotelService.CreateHotel(model.Name, model.Email, model.ImageUrl, model.Description, model.Location, model.Lattitude, model.Longitude, model.Region);
 
-        //[HttpGet]
-        //public ActionResult All()
-        //{
-        //    return this.View();
-        //}
+            return this.RedirectToAction("Index");
+        }
 
         //[HttpGet]
         //[ChildActionOnly]

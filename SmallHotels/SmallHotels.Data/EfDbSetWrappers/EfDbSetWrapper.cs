@@ -6,7 +6,7 @@ using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace SmallHotels.Data.EfRepository
+namespace SmallHotels.Data.EfDbSetWrappers
 {
     public class EfDbSetWrapper<T> : IEfDbSetWrapper<T>
         where T : class

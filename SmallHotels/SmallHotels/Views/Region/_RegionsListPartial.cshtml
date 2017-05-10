@@ -1,0 +1,32 @@
+﻿@model SmallHotels.Models.RegionViewModels.RegionsListViewModel
+
+@foreach (var region in Model.Regions)
+{
+
+}
+@if (Model.Regions.Count == 0)
+{
+    <div class="row">
+        <h5 class="text-center">No results found... </h5>
+    </div>
+}
+else
+{
+    foreach (var item in Model.Regions)
+    {
+        <a href="/region/details/@item.Id" class="link-entry">
+            <div class="card destination-card">
+                <div class="card-content col-md-3">
+                    <p>Hotels Count: @item.HotelsCount</p>
+                </div>
+                <div class="card-content col-md-9 card-destinations-entry">
+                    <h5 class="destinations-entry-city">Region: @item.Name</h5>
+                </div>
+            </div>
+        </a>
+    }
+
+    <div class="text-center">
+        @Html.Partial("_PagerPartial", Model)
+    </div>
+}

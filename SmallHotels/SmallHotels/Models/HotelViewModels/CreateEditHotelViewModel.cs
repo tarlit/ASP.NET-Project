@@ -33,10 +33,10 @@ namespace SmallHotels.Models.HotelViewModels
         [StringLength(50, MinimumLength = 3)]
         public string Location { get; set; }
 
-        [StringLength(25, MinimumLength = 6)]
+        [StringLength(25, MinimumLength = 3)]
         public string Lattitude { get; set; }
 
-        [StringLength(25, MinimumLength = 6)]
+        [StringLength(25, MinimumLength = 3)]
         public string Longitude { get; set; }
 
         public string Region { get; set; }
