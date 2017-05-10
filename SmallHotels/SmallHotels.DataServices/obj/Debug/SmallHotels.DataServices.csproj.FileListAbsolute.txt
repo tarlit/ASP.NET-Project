@@ -28,3 +28,7 @@ C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\Microsoft.Owin.Security.Cookies.xml
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.dll
 C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\obj\Debug\SmallHotels.DataServices.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Common.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\AutoMapper.dll
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\SmallHotels.Common.pdb
+C:\Users\Admin\Desktop\SmallHotels\SmallHotels.DataServices\bin\Debug\AutoMapper.xml

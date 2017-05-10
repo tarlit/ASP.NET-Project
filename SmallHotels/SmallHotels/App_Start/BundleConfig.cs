@@ -11,11 +11,14 @@ namespace SmallHotels
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
+            bundles.Add(new ScriptBundle("~/bundles/toastr").Include(
+                        "~/Scripts/toastr.js", "~/Scripts/toastr-options.js"));
+
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryajax").Include(
-                       "~/Scripts/jquery.unobtrusive*"));
+                        "~/Scripts/jquery.unobtrusive-ajax.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -23,12 +26,14 @@ namespace SmallHotels
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js",
-                      "~/Scripts/respond.js"));
+                        "~/Scripts/bootstrap.js",
+                        "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                        "~/Content/bootstrap.css",
+                        "~/Content/materialize/css/materialize.css",
+                        "~/Content/toastr.css",
+                        "~/Content/site.css"));
         }
     }
 }

@@ -19,7 +19,7 @@ namespace SmallHotels.Data.Models
             this.likes = new HashSet<Like>();
         }
 
-        public Hotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, Guid regionId)
+        public Hotel(string name, string email, string imageUrl, string description, string location, string lattitude, string longitude, Guid regionId, string userId)
             : this()
         {
             this.Name = name;

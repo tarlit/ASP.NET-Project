@@ -16,7 +16,7 @@ namespace SmallHotels.DataServices.Contracts
 
         void EditHotel(Guid hotelId, string name, string email, string imageUrl, string description);
 
-        void DeleteHotel(Guid hotelId);
+        void DeleteHotel(Guid? hotelId);
 
         int GetPagesCount(string query);
 

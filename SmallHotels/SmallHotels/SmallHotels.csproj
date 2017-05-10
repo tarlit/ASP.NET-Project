@@ -225,14 +225,33 @@
     </Compile>
     <Compile Include="HttpModules\CultureModule.cs" />
     <Compile Include="Infrastructure\AjaxOnlyAttribute.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs" />
+    <Compile Include="Models\AccountViewModels\ExternalLoginListViewModel.cs" />
+    <Compile Include="Models\AccountViewModels\LoginViewModel.cs" />
+    <Compile Include="Models\AccountViewModels\RegisterViewModel.cs" />
+    <Compile Include="Models\HotelViewModels\CommentsViewModel.cs" />
+    <Compile Include="Models\HotelViewModels\CreateEditHotelViewModel.cs" />
+    <Compile Include="Models\HotelViewModels\HotelDetailsViewModel.cs" />
+    <Compile Include="Models\HotelViewModels\HotelItemViewModel.cs" />
+    <Compile Include="Models\HotelViewModels\HotelsListViewModel.cs" />
     <Compile Include="Models\ManageViewModels\ChangePasswordViewModel.cs" />
     <Compile Include="Models\ManageViewModels\IndexViewModel.cs" />
     <Compile Include="Models\ManageViewModels\SetPasswordViewModel.cs" />
-    <Compile Include="Models\VerifyCodeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Themes\baner.png" />
+    <Content Include="App_Themes\IconsSocial\1487474216_facebook.png" />
+    <Content Include="App_Themes\IconsSocial\1487474227_linkedin.png" />
+    <Content Include="App_Themes\IconsSocial\1487474240_youtube.png" />
+    <Content Include="App_Themes\IconsSocial\1487474244_google.png" />
+    <Content Include="App_Themes\IconsSocial\1487474262_twitter2.png" />
+    <Content Include="App_Themes\IconsSocial\fb-art.png" />
+    <Content Include="App_Themes\landing-page.jpg" />
+    <Content Include="App_Themes\logo-transparent.png" />
+    <Content Include="App_Themes\pirin.jpg" />
+    <Content Include="App_Themes\rila.jpg" />
+    <Content Include="App_Themes\rodopi.jpg" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -348,17 +367,10 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
-    <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
     <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
-    <Content Include="Views\Account\ForgotPassword.cshtml" />
-    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
-    <Content Include="Views\Account\ResetPassword.cshtml" />
-    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Account\SendCode.cshtml" />
-    <Content Include="Views\Account\VerifyCode.cshtml" />
     <Content Include="Views\Manage\ChangePassword.cshtml" />
     <Content Include="Views\Manage\Index.cshtml" />
     <Content Include="Views\Manage\SetPassword.cshtml" />
@@ -374,13 +386,13 @@
     <Content Include="Views\Manage\_UserBookedRoomsPartial.cshtml" />
     <Content Include="Views\Manage\_UserEditInfoPartial.cshtml" />
     <Content Include="Views\Shared\_PagerPartial.cshtml" />
+    <Content Include="Views\Account\Lockout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Controllers\" />
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\Shared\" />
-    <Folder Include="Models\AccountViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

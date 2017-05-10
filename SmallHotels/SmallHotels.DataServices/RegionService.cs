@@ -31,17 +31,28 @@ namespace SmallHotels.DataServices
 
         public IEnumerable<Region> GetAllRegionsWithHotelsIncluded()
         {
-            throw new NotImplementedException();
+            var regionsWithHotels = this.regionSetWrapper
+                .AllWithInclude(r => r.Hotels)
+                .OrderBy(x => x.Name).AsQueryable()
+                .ToList();
+
+            return regionsWithHotels;
         }
 
         public IEnumerable<Region> GetAllRegionsSortedById()
         {
-            throw new NotImplementedException();
+            var regions = this.regionSetWrapper.All
+                .OrderBy(x => x.Id).AsQueryable().ToList();
+
+            return regions;
         }
 
         public IEnumerable<Region> GetAllRegionsSortedByName()
         {
-            throw new NotImplementedException();
+            var regions = this.regionSetWrapper.All
+                .OrderBy(x => x.Name).AsQueryable().ToList();
+
+            return regions;
         }
 
         public Region GetById(Guid? id)
@@ -136,23 +147,4 @@ namespace SmallHotels.DataServices
             return regions;
         }
     }
-        
-        //public IEnumerable<RegionModel> GetAllRegionsSortedById()
-        //{
-        //    return this.regionSetWrapper.All.ToList()
-        //        .OrderBy(r => r.Id).AsQueryable()
-        //        .Select(RegionModel.Create).ToList();
-        //}
-
-        //public IEnumerable<RegionModel> GetAllRegionsWithHotelsIncluded()
-        //{
-        //    return this.regionSetWrapper.AllWithInclude(r => r.Hotels)
-        //        .Select(RegionModel.Create).ToList();
-        //}
-
-        //public RegionModel GetById(Guid id)
-        //{
-        //    return new RegionModel(this.regionSetWrapper.GetById(id));
-        //}
-    //}
 }
