@@ -1,17 +1,16 @@
-﻿using SmallHotels.DataServices.Contracts;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SmallHotels.Data.Models;
-using SmallHotels.Auth.Models;
-
-using Bytes2you.Validation;
-using SmallHotels.Common.Constants;
-
-namespace SmallHotels.DataServices
+﻿namespace SmallHotels.DataServices
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    using Bytes2you.Validation;
+
+    using SmallHotels.Auth.Models;
+    using SmallHotels.Data.Models;
+    using SmallHotels.Common.Constants;
+    using SmallHotels.DataServices.Contracts;
+
     public class UserInfoService : IUserInfoService
     {
         private readonly ApplicationDbContext context;

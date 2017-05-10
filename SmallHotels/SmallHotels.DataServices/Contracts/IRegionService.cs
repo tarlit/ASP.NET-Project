@@ -7,10 +7,20 @@ namespace SmallHotels.DataServices.Contracts
 {
     public interface IRegionService
     {
-        //IEnumerable<RegionModel> GetAllRegionsWithHotelsIncluded();
+        IEnumerable<Region> GetAllRegionsWithHotelsIncluded();
 
-        //IEnumerable<RegionModel> GetAllRegionsSortedById();
+        IEnumerable<Region> GetAllRegionsSortedById();
 
-        //RegionModel GetById(Guid id);
+        IEnumerable<Region> GetAllRegionsSortedByName();
+
+        Region GetById(Guid? id);
+
+        void CreateRegion(string name);
+
+        void DeleteRegion(Guid? regionId);
+
+        int GetPagesCount(string query);
+
+        IEnumerable<Region> GetRegionsByPage(string query, int page, int pageSize);
     }
 }

@@ -1,5 +1,4 @@
-﻿using SmallHotels.Auth.Models;
-using SmallHotels.Data.Models;
+﻿using SmallHotels.Data.Models;
 using System.Data.Entity;
 
 namespace SmallHotels.Data
